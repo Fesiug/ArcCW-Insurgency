@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models\weapons\arccw_ins2\m9\weapon_m9_dm"
+	"$bumpmap" 						"models\weapons\arccw_ins2\m9\weapon_m9_nm"
+    "$color"						"[1.0 1.0 1.0]"
+
+	"$selfillum"                    "1"
+	"$selfillummask"                "models\weapons\arccw_ins2\m9\weapon_m9_si"
+
+
+	"$phong"                        "1"
+	"$phongalbedotint"              "1"
+	"$phongtint"                    "[0.67 0.9 1]"
+
+	"$phongboost"                   "1.4"
+	"$phongfresnelranges"           "[1 2.5 7]"
+
+	"$phongexponenttexture"         "models\weapons\arccw_ins2\m9\weapon_m9_exp"
+
+	"$envmap"                       "env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"
+	"$envmaptint"                   "[0.075 0.075 0.075]"
+}
