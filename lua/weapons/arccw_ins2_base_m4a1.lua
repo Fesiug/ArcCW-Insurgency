@@ -88,9 +88,9 @@ SWEP.ShellRotateAngle	= Angle(0, 90, 0)
 SWEP.MuzzleEffectAttachment		= 1
 SWEP.CaseEffectAttachment		= 4
 
-SWEP.SpeedMult = 0.98
-SWEP.SightedSpeedMult = 0.75
-SWEP.SightTime = 0.250
+SWEP.SpeedMult = 0.74
+SWEP.SightedSpeedMult = 0.67
+SWEP.SightTime = 0.450
 
 SWEP.IronSightStruct = {
     Pos = Vector(-2.5, -2, 0.67),
@@ -135,7 +135,7 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_carryhandle_m4.mdl",
-                BoneMerge = false,
+                BoneMerge = false, -- ARCTIC PLS FIX
                 Offset = {
                     pos = Vector(0, 0, 0),
                     ang = Angle(0, 0, 0),
@@ -147,7 +147,7 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard_m4a1.mdl",
-                BoneMerge = false,
+                BoneMerge = false, -- ARCTIC PLS FIX
                 Offset = {
                     pos = Vector(0, 0, 0),
                     ang = Angle(0, 0, 0),
@@ -159,7 +159,7 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard2_m4a1.mdl",
-                BoneMerge = false,
+                BoneMerge = false, -- ARCTIC PLS FIX
                 Offset = {
                     pos = Vector(0, 0, 0),
                     ang = Angle(0, 0, 0),
@@ -171,7 +171,7 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard3_m4a1.mdl",
-                BoneMerge = false,
+                BoneMerge = false, -- ARCTIC PLS FIX
                 Offset = {
                     pos = Vector(0, 0, 0),
                     ang = Angle(0, 0, 0),
@@ -209,7 +209,7 @@ SWEP.Attachments = {
         Slot = {"optic","optic_lp"},
         Bone = "A_Optic",
         Offset = {
-            vpos = Vector(2, 0, 0),
+            vpos = Vector(0, 0, 0),
             vang = Angle(90, 0, 90),
         },
         DefaultEles = {"carryhandle"}
@@ -223,7 +223,7 @@ SWEP.Attachments = {
             vpos = Vector(0, 1, 0),
             vang = Angle(270, 270, 90),
         },
-        DefaultEles = {"standard3"}
+        DefaultEles = {"standard1"}
     },
     {
         PrintName = "Muzzle",
@@ -244,7 +244,7 @@ SWEP.Attachments = {
             vpos = Vector(0, 2*0.9512, 0),
             vang = Angle(0, 0, 270),
         },
-        DefaultEles = {"standard1"}
+        DefaultEles = {"standard2"}
     },
     {
         PrintName = "Tactical East",
@@ -255,7 +255,7 @@ SWEP.Attachments = {
             vpos = Vector(0, 0, 0),
             vang = Angle(0, 0, 90),
         },
-        DefaultEles = {"standard2"}
+        DefaultEles = {"standard3"}
     },
 }
 
