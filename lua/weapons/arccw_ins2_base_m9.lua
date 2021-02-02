@@ -35,10 +35,10 @@ SWEP.ChamberSize		= 1
 
 SWEP.PhysBulletMuzzleVelocity	= 275
 
-SWEP.Recoil			= 1.500
-SWEP.RecoilSide		= 0.525
+SWEP.Recoil			= 1.100
+SWEP.RecoilSide		= 0.425
 SWEP.RecoilRise		= 10
-SWEP.RecoilPunch    = -0.67
+SWEP.RecoilPunch    = -0.4
 SWEP.VisualRecoilMult = 1
 SWEP.MaxRecoilBlowback = 3
 
