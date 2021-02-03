@@ -22,7 +22,7 @@ SWEP.ViewModelFOV	= 74
 
 SWEP.DefaultBodygroups = "000000000000"
 
-SWEP.Damage				= 32
+SWEP.Damage				= 39
 SWEP.DamageMin			= 20
 
 SWEP.Range				= 50
@@ -113,8 +113,8 @@ SWEP.CrouchAng = active_ang
 SWEP.HolsterPos = Vector(0, 0, 0)
 SWEP.HolsterAng = Angle(-2, 5, -6)
 
-SWEP.SprintPos = Vector(0, 0, 0)
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = active_pos + Vector(0, 0, 1)
+SWEP.SprintAng = active_ang
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -127,8 +127,15 @@ SWEP.BarrelLength = 24
 
 SWEP.AttachmentElements = {}
 
-SWEP.ExtraSightDist = 10
+SWEP.ExtraSightDist = 5
 SWEP.GuaranteeLaser = true
+
+SWEP.ReferencePosCache = {
+    [106] = {
+        Pos = Vector(-1.8615, -2.6033, -17.0233),
+        Ang = Angle(270, 0, 90),
+    },
+}
 
 SWEP.WorldModelOffset = {
     pos = Vector(-12.5, 4, -2.5),
@@ -137,7 +144,41 @@ SWEP.WorldModelOffset = {
 
 SWEP.MirrorVMWM = true
 
-SWEP.Attachments = {}
+local noatt = Material("materials/entities/acwatt_ins2_noatt.png", "mips smooth")
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Nil",
+        DefaultAttIcon = noatt,
+        Slot = "muzzle",
+        Bone = "A_Suppressor",
+        Offset = {
+            vpos = Vector(0, 0, 0),
+            vang = Angle(270, 90, 270),
+        },
+        VMScale = Vector(.6, .6, .6)
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Nil",
+        DefaultAttIcon = noatt,
+        Slot = "tac",
+        Bone = "A_Underbarrel",
+        Offset = {
+            vpos = Vector(-2, 0, 0.75),
+            vang = Angle(0, 0, 0),
+        },
+        CorrectivePos = Vector(1.5, 0, -0.5),
+        ExtraSightDist = 7,
+        DefaultEles = {"standard2"}
+    },
+    {
+        PrintName = "Firegroup",
+        DefaultAttName = "Nil",
+        DefaultAttIcon = noatt,
+        Slot = "fcg",
+    },
+}
 
 local snds = {
     ArcCW_Insurgency:GetSound("Universal.PistolDraw"),
