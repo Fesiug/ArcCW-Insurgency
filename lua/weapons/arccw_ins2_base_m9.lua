@@ -192,9 +192,8 @@ local snds = {
 }
 
 SWEP.Animations = {
-    ["idle"] = {
-        Source = "base_idle"
-    },
+    ["idle"] = { Source = "base_idle" },
+    ["idle_sights"] = { Source = "iron_idle" },
     ["enter_sprint"] = { Source = "base_sprint" },
     ["exit_sprint"] = { Source = "base_idle" },
     ["idle_sprint"] = {

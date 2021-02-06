@@ -181,7 +181,7 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.ExtraSightDist = 5
+SWEP.ExtraSightDist = 7.5
 SWEP.GuaranteeLaser = true
 
 SWEP.ReferencePosCache = {
@@ -276,9 +276,8 @@ SWEP.Attachments = {
 }
 
 SWEP.Animations = {
-    ["idle"] = {
-        Source = "base_idle"
-    },
+    ["idle"] = { Source = "base_idle" },
+    ["idle_sights"] = { Source = "iron_idle" },
     ["enter_sprint"] = { Source = "base_sprint" },
     ["exit_sprint"] = { Source = "base_idle" },
     ["idle_sprint"] = {
