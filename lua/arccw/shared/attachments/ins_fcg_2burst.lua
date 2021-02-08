@@ -24,7 +24,7 @@ att.Override_Firemodes = {
     }
 }
 
-att.Mult_Recoil = 1.25
+att.Mult_Recoil = 3
 att.Mult_SightTime = 1.2
 att.Mult_RPM = 3
 att.Mult_AccuracyMOA = 1.5

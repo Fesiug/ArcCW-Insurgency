@@ -25,13 +25,17 @@ att.Override_Firemodes = {
 
 att.Hook_Compatible = function(wep)
     local auto = false
+    local burst = false
     for i, v in pairs(wep.Firemodes) do
         if v.Mode and v.Mode == -3 then
+            burst = true
+            break
+        elseif v.Mode and v.Mode == 2 then
             auto = true
             break
         end
     end
-    if auto then return false end
+    if !auto and burst then return false end
 end
 
 att.Mult_RPM = 1.1

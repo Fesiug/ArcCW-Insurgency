@@ -79,6 +79,12 @@ SWEP.MeleeMissSound		= "weapons/iceaxe/iceaxe_swing1.wav"
 SWEP.MeleeHitSound		= "arccw_go/knife/knife_hitwall1.wav"
 SWEP.MeleeHitNPCSound	= "physics/body/body_medium_break2.wav"
 
+SWEP.FiremodeSound      = ""
+SWEP.EnterBipodSound    = ""
+SWEP.ExitBipodSound     = ""
+SWEP.SelectUBGLSound    = ""
+SWEP.ExitUBGLSound      = ""
+
 SWEP.MuzzleEffect		= "muzzleflash_4"
 SWEP.ShellModel			= "models/shells/shell_556.mdl"
 SWEP.ShellPitch			= 100
@@ -278,6 +284,8 @@ SWEP.Attachments = {
 SWEP.Animations = {
     ["idle"] = { Source = "base_idle" },
     ["idle_sights"] = { Source = "iron_idle" },
+    ["changefiremode"] = { Source = "base_fireselect", SoundTable = { ArcCW_Insurgency:InsertSound("Weapon_M4A1.ROF", 8/30 ) } },
+    ["changefiremode_iron"] = { Source = "iron_fireselect", SoundTable = { ArcCW_Insurgency:InsertSound("Weapon_M4A1.ROF", 8/30 ) } },
     ["enter_sprint"] = { Source = "base_sprint" },
     ["exit_sprint"] = { Source = "base_idle" },
     ["idle_sprint"] = {

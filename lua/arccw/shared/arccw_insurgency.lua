@@ -133,6 +133,7 @@ end
 		ArcCW_Insurgency:AddSound( "Weapon_M4A1.Hit",		    "weapons/arccw_ins2/m4a1/handling/m4a1_hit.wav", CHAN_ITEM, 0.2, 65, 100 )
 		ArcCW_Insurgency:AddSound( "Weapon_M4A1.Boltback",		"weapons/arccw_ins2/m4a1/handling/m4a1_boltback.wav", CHAN_ITEM, 0.3, 65, 100 )
 		ArcCW_Insurgency:AddSound( "Weapon_M4A1.Boltrelease",	"weapons/arccw_ins2/m4a1/handling/m4a1_boltrelease.wav", CHAN_ITEM, 0.3, 65, 100 )
+		ArcCW_Insurgency:AddSound( "Weapon_M4A1.ROF",	        "weapons/arccw_ins2/m4a1/handling/m4a1_fireselect.wav", CHAN_ITEM, 0.2, 65, 100 )
 
 	-- MP5K
 		ArcCW_Insurgency:AddSound( "Weapon_mp5k.MagRelease",	"weapons/arccw_ins2/mp5k/handling/mp5k_magrelease.wav", CHAN_ITEM, 0.2, 65, 100 )
