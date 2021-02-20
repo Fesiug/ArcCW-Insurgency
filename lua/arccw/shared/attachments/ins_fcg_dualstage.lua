@@ -13,6 +13,7 @@ att.Desc_Cons = {
     "-30% Fire rate when sighted",
 }
 att.Slot = "fcg"
+att.SortOrder = 8
 
 --att.Mult_Recoil = 0.9
 --att.Mult_RecoilSide = 0.8
@@ -33,13 +34,13 @@ att.Override_Firemodes = {
 att.AutoStats = true
 
 att.Hook_ModifyRecoil = function(wep)
-    if wep:GetCurrentFiremode().Mode == 2 and  wep:GetState() == ArcCW.STATE_SIGHTS then
+    if wep:GetCurrentFiremode().Mode == 2 and wep:GetState() == ArcCW.STATE_SIGHTS then
         return {Recoil = 0.85, RecoilSide = 0.7, VisualRecoilMult = 0.8}
     end
 end
 
 att.Hook_ModifyRPM = function(wep, delay)
-    if wep:GetCurrentFiremode().Mode == 2 and  wep:GetState() == ArcCW.STATE_SIGHTS then
+    if wep:GetCurrentFiremode().Mode == 2 and wep:GetState() == ArcCW.STATE_SIGHTS then
         return delay * (1 / 0.7)
     end
 end
@@ -56,4 +57,10 @@ att.Hook_Compatible = function(wep)
     end
 
     if !has then return false end
+end
+
+att.Hook_FiremodeName = function(wep)
+    local power = wep:GetState() == ArcCW.STATE_SIGHTS and "+" or "-"
+
+    return wep:GetCurrentFiremode().Mode == 2 and ( ArcCW.GetTranslation("fcg.auto") .. power ) or nil
 end

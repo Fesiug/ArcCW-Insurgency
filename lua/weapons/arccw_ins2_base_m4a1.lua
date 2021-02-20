@@ -38,7 +38,7 @@ SWEP.PhysBulletMuzzleVelocity	= 275
 
 SWEP.Recoil			= 0.900
 SWEP.RecoilSide		= 0.425
-SWEP.RecoilRise		= 1
+SWEP.RecoilRise		= .5
 SWEP.RecoilPunch    = -0.6
 SWEP.VisualRecoilMult = 1
 SWEP.MaxRecoilBlowback = 3
@@ -141,10 +141,11 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_carryhandle_m4.mdl",
-                BoneMerge = true, -- ARCTIC PLS FIX
+                BoneMerge = false, -- ARCTIC PLS FIX
+                Bone = "A_Optic",
                 Offset = {
-                    pos = Vector(0, 0, 0),
-                    ang = Angle(0, 0, 0),
+                    pos = Vector(-2.3555, 1.3757, -10.3962),
+                    ang = Angle(90, 0, 90),
                 },
             }
         },
@@ -153,10 +154,11 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard_m4a1.mdl",
-                BoneMerge = true, -- ARCTIC PLS FIX
+                BoneMerge = false, -- ARCTIC PLS FIX
+                Bone = "A_UnderBarrel",
                 Offset = {
-                    pos = Vector(0, 0, 0),
-                    ang = Angle(0, 0, 0),
+                    pos = Vector(-23.2797, 3.1816, 3.4332),
+                    ang = Angle(0, 0, 90),
                 },
             }
         },
@@ -165,7 +167,7 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard2_m4a1.mdl",
-                BoneMerge = true, -- ARCTIC PLS FIX
+                BoneMerge = false, -- ARCTIC PLS FIX
                 Offset = {
                     pos = Vector(0, 0, 0),
                     ang = Angle(0, 0, 0),
@@ -177,7 +179,7 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard3_m4a1.mdl",
-                BoneMerge = true, -- ARCTIC PLS FIX
+                BoneMerge = false, -- ARCTIC PLS FIX
                 Offset = {
                     pos = Vector(0, 0, 0),
                     ang = Angle(0, 0, 0),
@@ -226,7 +228,7 @@ SWEP.Attachments = {
         PrintName = "Underbarrel",
         DefaultAttName = "Handguard",
         DefaultAttIcon = noatt,
-        Slot = "foregrip",
+        Slot = {"foregrip", "bipod", "ubgl"},
         Bone = "A_Foregrip",
         Offset = {
             vpos = Vector(0, 1, 0),

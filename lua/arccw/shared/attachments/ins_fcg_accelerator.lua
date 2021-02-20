@@ -8,11 +8,12 @@ att.Desc_Cons = {
     "Fire rate starts 50% slower"
 }
 att.Slot = "fcg"
+att.SortOrder = 6
 
 att.Override_Firemodes = {
     {
         Mode = 2,
-		CustomBars = "-------",
+		CustomBars = "-------"
     },
     {
         Mode = 0

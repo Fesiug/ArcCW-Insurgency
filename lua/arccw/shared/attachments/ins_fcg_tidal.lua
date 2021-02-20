@@ -13,6 +13,7 @@ att.Desc_Cons = {
     "Inconsistent fire rate",
 }
 att.Slot = "fcg"
+att.SortOrder = 1
 
 att.Override_Firemodes = {
     {

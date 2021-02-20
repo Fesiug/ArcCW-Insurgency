@@ -9,6 +9,7 @@ att.Desc_Cons = {
 }
 att.AutoStats = true
 att.Slot = "fcg"
+att.SortOrder = 12
 
 att.Override_Firemodes = {
     {

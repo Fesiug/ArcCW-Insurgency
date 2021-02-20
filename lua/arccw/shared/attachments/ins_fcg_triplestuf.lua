@@ -8,6 +8,7 @@ att.Desc_Cons = {
 }
 att.AutoStats = true
 att.Slot = "fcg"
+att.SortOrder = -1
 
 att.Override_ChamberSize = 3
 

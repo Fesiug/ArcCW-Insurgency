@@ -5,9 +5,11 @@ att.Desc_Pros = {
     "Automatic fire with adjustable rate"
 }
 att.Desc_Cons = {
-    "Maximum 90% fire rate"
+    "Maximum 90% fire rate",
+    "[90%] +15% Recoil"
 }
 att.Slot = "fcg"
+att.SortOrder = 5
 
 att.Override_Firemodes = {
     {
@@ -15,6 +17,7 @@ att.Override_Firemodes = {
         PrintName = "90%",
         Mult_RPM = 0.9,
 		CustomBars = "--_",
+        Mult_Recoil = 1.15
     },
     {
         Mode = 2,

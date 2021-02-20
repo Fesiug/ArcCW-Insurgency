@@ -14,6 +14,7 @@ att.Desc_Cons = {
 }
 att.Slot = "fcg"
 att.InvAtt = "fcg_dualstage"
+att.SortOrder = 8
 
 --att.Mult_HipDispersion = 1.15
 
@@ -54,4 +55,13 @@ att.Hook_Compatible = function(wep)
     end
 
     return
+end
+
+att.Hook_FiremodeName = function(wep)
+    if wep:GetCurrentFiremode().Mode != 2 then return nil end
+    if wep:GetInUBGL() then return nil end
+
+    local power = wep:GetState() == ArcCW.STATE_SIGHTS and "+" or "-"
+
+    return ( ArcCW.GetTranslation("fcg.auto") .. power )
 end
