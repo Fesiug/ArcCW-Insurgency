@@ -168,9 +168,10 @@ SWEP.AttachmentElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard2_m4a1.mdl",
                 BoneMerge = false, -- ARCTIC PLS FIX
+                Bone = "A_UnderBarrel",
                 Offset = {
-                    pos = Vector(0, 0, 0),
-                    ang = Angle(0, 0, 0),
+                    pos = Vector(-23.2797, 3.1816, 3.4332),
+                    ang = Angle(0, 0, 90),
                 },
             }
         },
@@ -180,9 +181,10 @@ SWEP.AttachmentElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard3_m4a1.mdl",
                 BoneMerge = false, -- ARCTIC PLS FIX
+                Bone = "A_UnderBarrel",
                 Offset = {
-                    pos = Vector(0, 0, 0),
-                    ang = Angle(0, 0, 0),
+                    pos = Vector(-23.2797, 3.1816, 3.4332),
+                    ang = Angle(0, 0, 90),
                 },
             }
         },
