@@ -236,6 +236,10 @@ SWEP.Attachments = {
             vpos = Vector(0, 1, 0),
             vang = Angle(270, 270, 90),
         },
+        SlideAmount = {
+            vmin = Vector(0, -1.5, 0),
+            vmax = Vector(0, 3, 0),
+        },
         DefaultEles = {"standard1"}
     },
     {

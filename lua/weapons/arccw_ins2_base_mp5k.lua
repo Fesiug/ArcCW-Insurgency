@@ -144,10 +144,11 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_modkit_05.mdl",
-                BoneMerge = true, -- ARCTIC PLS FIX
+                BoneMerge = false, -- ARCTIC PLS FIX
+                Bone = "A_ModKit",
                 Offset = {
-                    pos = Vector(0, 0, 0),
-                    ang = Angle(0, 0, 0),
+                    pos = Vector(-0.0049, -0.8427, 1.9794),
+                    ang = Angle(90, 0, 90),
                 },
             }
         },
