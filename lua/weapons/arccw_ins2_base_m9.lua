@@ -37,9 +37,9 @@ SWEP.PhysBulletMuzzleVelocity	= 275
 
 SWEP.Recoil			= 1.500
 SWEP.RecoilSide		= 0.425
-SWEP.RecoilRise		= -1
-SWEP.RecoilPunch    = 1.4
-SWEP.VisualRecoilMult = 1
+SWEP.RecoilRise		= 2
+SWEP.RecoilPunch    = 1
+SWEP.VisualRecoilMult = 10
 SWEP.MaxRecoilBlowback = 3
 
 SWEP.Delay			= 60 / 600
@@ -69,11 +69,6 @@ SWEP.DistantShootSound		= nil
 SWEP.ShootVol		= 140
 SWEP.ShootPitch		= (100+105)/2
 SWEP.ShootPitchVariation = (((100+105)/2)/100)-1
-
-SWEP.MeleeSwingSound	= "arccw_go/m249/m249_draw.wav"
-SWEP.MeleeMissSound		= "weapons/iceaxe/iceaxe_swing1.wav"
-SWEP.MeleeHitSound		= "arccw_go/knife/knife_hitwall1.wav"
-SWEP.MeleeHitNPCSound	= "physics/body/body_medium_break2.wav"
 
 SWEP.MuzzleEffect		= "muzzleflash_pistol"
 SWEP.ShellModel			= "models/shells/shell_9mm.mdl"

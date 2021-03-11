@@ -74,11 +74,6 @@ SWEP.ShootVol		= 140
 SWEP.ShootPitch		= (100+105)/2
 SWEP.ShootPitchVariation = (((100+105)/2)/100)-1
 
-SWEP.MeleeSwingSound	= "arccw_go/m249/m249_draw.wav"
-SWEP.MeleeMissSound		= "weapons/iceaxe/iceaxe_swing1.wav"
-SWEP.MeleeHitSound		= "arccw_go/knife/knife_hitwall1.wav"
-SWEP.MeleeHitNPCSound	= "physics/body/body_medium_break2.wav"
-
 SWEP.FiremodeSound      = ""
 SWEP.EnterBipodSound    = ""
 SWEP.ExitBipodSound     = ""
@@ -141,7 +136,6 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_carryhandle_m4.mdl",
-                BoneMerge = false, -- ARCTIC PLS FIX
                 Bone = "A_Optic",
                 Offset = {
                     pos = Vector(-2.3555, 1.3757, -10.3962),
@@ -154,7 +148,6 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard_m4a1.mdl",
-                BoneMerge = false, -- ARCTIC PLS FIX
                 Bone = "A_UnderBarrel",
                 Offset = {
                     pos = Vector(-23.2797, 3.1816, 3.4332),
@@ -167,7 +160,6 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard2_m4a1.mdl",
-                BoneMerge = false, -- ARCTIC PLS FIX
                 Bone = "A_UnderBarrel",
                 Offset = {
                     pos = Vector(-23.2797, 3.1816, 3.4332),
@@ -180,7 +172,6 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_standard3_m4a1.mdl",
-                BoneMerge = false, -- ARCTIC PLS FIX
                 Bone = "A_UnderBarrel",
                 Offset = {
                     pos = Vector(-23.2797, 3.1816, 3.4332),
@@ -365,7 +356,3 @@ SWEP.Animations = {
         },
     },
 }
-
-SWEP.M_Hook_ReloadTime = function(wep, mult)
-    return 0.8
-end

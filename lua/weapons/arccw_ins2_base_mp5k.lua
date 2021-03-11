@@ -77,11 +77,6 @@ SWEP.ShootVol		= 140
 SWEP.ShootPitch		= (100+105)/2
 SWEP.ShootPitchVariation = (((100+105)/2)/100)-1
 
-SWEP.MeleeSwingSound	= "arccw_go/m249/m249_draw.wav"
-SWEP.MeleeMissSound		= "weapons/iceaxe/iceaxe_swing1.wav"
-SWEP.MeleeHitSound		= "arccw_go/knife/knife_hitwall1.wav"
-SWEP.MeleeHitNPCSound	= "physics/body/body_medium_break2.wav"
-
 SWEP.FiremodeSound      = ""
 SWEP.EnterBipodSound    = ""
 SWEP.ExitBipodSound     = ""
@@ -144,7 +139,6 @@ SWEP.AttachmentElements = {
         VMElements = {
             {
                 Model = "models/weapons/arccw_ins2/upgrades/a_modkit_05.mdl",
-                BoneMerge = false, -- ARCTIC PLS FIX
                 Bone = "A_ModKit",
                 Offset = {
                     pos = Vector(-0.0049, -0.8427, 1.9794),
