@@ -39,7 +39,7 @@ SWEP.Recoil			= 1.500
 SWEP.RecoilSide		= 0.425
 SWEP.RecoilRise		= 2
 SWEP.RecoilPunch    = 1
-SWEP.VisualRecoilMult = 10
+SWEP.VisualRecoilMult = 4
 SWEP.MaxRecoilBlowback = 3
 
 SWEP.Delay			= 60 / 600
@@ -124,13 +124,6 @@ SWEP.AttachmentElements = {}
 
 SWEP.ExtraSightDist = 5
 SWEP.GuaranteeLaser = true
-
-SWEP.ReferencePosCache = {
-    [106] = {
-        Pos = Vector(-1.8615, -2.6033, -17.0233),
-        Ang = Angle(270, 0, 90),
-    },
-}
 
 SWEP.WorldModelOffset = {
     pos = Vector(-12.5, 4, -2.5),

@@ -94,8 +94,8 @@ SWEP.SightedSpeedMult = 0.67
 SWEP.SightTime = 0.450
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.5, -2, 0.67),
-    Ang = Angle(-0.25, 0, 0),
+    Pos = Vector(-2.25, -2, 0.57),
+    Ang = Angle(0.1, 0, 0),
     Magnification = 1.25,
     ViewModelFOV = 65-25,
     SwitchToSound = "",
@@ -162,17 +162,6 @@ SWEP.AttachmentElements = {
 SWEP.ExtraSightDist = 7.5
 SWEP.GuaranteeLaser = true
 
-SWEP.ReferencePosCache = {
-    [99] = {
-        Pos = Vector(-2.2427, -1.0011, -7.5362),
-        Ang = Angle(270, 0, 90),
-    },
-    [108] = {
-        Pos = Vector(-3.4737, -3.1923, -19.9009),
-        Ang = Angle(270, 0, 90),
-    }
-}
-
 SWEP.WorldModelOffset = {
     pos = Vector(-12.5, 4, -2.5),
     ang = Angle(-10, 0, 180)
@@ -228,7 +217,6 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(2, -1, 0.5),
         ExtraSightDist = 10,
-        DefaultEles = {"standard2"}
     },
     {
         PrintName = "Tactical East",
@@ -242,7 +230,6 @@ SWEP.Attachments = {
         },
         CorrectivePos = Vector(2, -1, 0.5),
         ExtraSightDist = 10,
-        DefaultEles = {"standard3"}
     },
     {
         PrintName = "Firegroup",
@@ -278,9 +265,9 @@ SWEP.Animations = {
         Source = "base_ready",
         SoundTable = {
 			ArcCW_Insurgency:InsertSound( "Universal.Draw", 0 ),
-			ArcCW_Insurgency:InsertSound( "Weapon_AKS74U.Boltback",       23/32 ),
-			ArcCW_Insurgency:InsertSound( "Weapon_AKS74U.Boltrelease",    36/32 ),
-			ArcCW_Insurgency:InsertSound( "Universal.LeanIn",           55/32 ),
+			ArcCW_Insurgency:InsertSound( "Weapon_AKS74U.ROF",       18/32 ),
+			ArcCW_Insurgency:InsertSound( "Weapon_AKS74U.Boltback",       31/32 ),
+			ArcCW_Insurgency:InsertSound( "Weapon_AKS74U.Boltrelease",    39/32 ),
         },
     },
     ["fire"] = {

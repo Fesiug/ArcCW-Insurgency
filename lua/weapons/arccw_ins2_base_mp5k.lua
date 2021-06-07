@@ -152,17 +152,6 @@ SWEP.AttachmentElements = {
 SWEP.ExtraSightDist = 7.5
 SWEP.GuaranteeLaser = true
 
-SWEP.ReferencePosCache = {
-    [101] = {
-        Pos = Vector(-2.3139, -0.9715, -10.3961),
-        Ang = Angle(270, 0, 90),
-    },
-    [106] = {
-        Pos = Vector(-3.4054, -2.4561, -17.7317),
-        Ang = Angle(270, 0, 90),
-    },
-}
-
 SWEP.WorldModelOffset = {
     pos = Vector(-12.5, 4, -2.5),
     ang = Angle(-10, 0, 180)
@@ -230,7 +219,7 @@ SWEP.Attachments = {
 
 SWEP.Animations = {
     ["idle"] = { Source = "base_idle" },
-    ["idle_sights"] = { Source = "iron_idle" },
+    ["idle_sights"] = { Source = "base_idle" },
     ["changefiremode"] = { Source = "base_fireselect", SoundTable = { ArcCW_Insurgency:InsertSound("Weapon_mp5k.ROF", 6/30 ) } },
     ["changefiremode_iron"] = { Source = "iron_fireselect", SoundTable = { ArcCW_Insurgency:InsertSound("Weapon_mp5k.ROF", 6/30 ) } },
     ["enter_sprint"] = { Source = "base_sprint" },
@@ -304,7 +293,3 @@ SWEP.Animations = {
         },
     },
 }
-
-SWEP.M_Hook_ReloadTime = function(wep, mult)
-    return 0.8
-end

@@ -185,16 +185,7 @@ SWEP.AttachmentElements = {
 SWEP.ExtraSightDist = 7.5
 SWEP.GuaranteeLaser = true
 
-SWEP.ReferencePosCache = {
-    [97] = {
-        Pos = Vector(-2.4906, -2.0142, -10.3992),
-        Ang = Angle(270, 0, 90),
-    },
-    [108] = {
-        Pos = Vector(-3.4737, -3.1923, -19.9009),
-        Ang = Angle(270, 0, 90),
-    }
-}
+SWEP.AutosolveSourceSeq = "base_idle"
 
 SWEP.WorldModelOffset = {
     pos = Vector(-12.5, 4, -2.5),
